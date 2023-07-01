@@ -4,8 +4,8 @@ fillColor = document.querySelector("#fill-color");
 strokeSize = document.querySelector("#size-slider");
 colorButtons = document.querySelectorAll(".colors .option");
 colorPicker = document.querySelector("#color-picker");
-clearBoard = document.querySelector("#clear-board");
-saveBoard = document.querySelector("#save-board");
+clearBoard = document.querySelector(".clear-board");
+saveBoard = document.querySelector(".save-board");
 context = board.getContext("2d");
 
 let previousMouseX, previousMouseY, snapshot,
@@ -65,7 +65,7 @@ const drawing = (e) => {
     context.putImageData(snapshot, 0, 0);
 
     if (selectedTool === "brush" || selectedTool === "eraser") {
-        context.strokeStyle = selectedColor === "eraser" ? "#ffffff" : selectedColor;
+        context.strokeStyle = selectedTool === "eraser" ? "#ffffff" : selectedColor;
         context.lineTo(e.offsetX, e.offsetY);
         context.stroke();
     }
@@ -112,7 +112,8 @@ clearBoard.addEventListener("click", () => {
 
 saveBoard.addEventListener("click", () => {
     const link = document.createElement("a");
-    link.download = "${Date.now()}.png";
+    let date = Date.now();
+    link.download = `${new Date(date)}.jpg`
     link.href = board.toDataURL();
     link.click();
 });
