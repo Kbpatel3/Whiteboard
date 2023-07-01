@@ -4,3 +4,32 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #E7CEA6;
+}
+.container{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    max-width: 1050px;
+}
+section{
+    background: #0A6EBD;
+    border-radius: 7px;
+}
+.tools-board{
+    width: 210px;
+    padding: 15px 22px 0;
+}
+.tools-board .row{
+    margin-bottom: 20px;
+}
+.row .options{
+    list-style: none;
+    margin: 10px 0 0 5px;
+}
