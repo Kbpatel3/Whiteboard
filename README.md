@@ -12,9 +12,6 @@ This repository contains a simple whiteboard application built with HTML, CSS, a
 - Clear board functionality
 - Save board functionality
 
-## Demo
-
-To see a live demo of the whiteboard application, you can visit [this link](https://example.com) (replace with the actual link to your demo).
 
 ## Getting Started
 
@@ -23,7 +20,7 @@ To get a local copy of the whiteboard application up and running on your machine
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/whiteboard.git
+   git clone https://github.com/Kbpatel3/whiteboard.git
    ```
 
 2. Navigate to the project directory:
@@ -52,10 +49,4 @@ Feel free to customize the whiteboard application to suit your needs. You can mo
 
 ## Credits
 
-The whiteboard application was developed by [Kaushal Patel](https://github.com/kaushalp88).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-Please note that this README template is provided as a starting point and should be modified to accurately represent your project.
+The whiteboard application was developed by [Kaushal Patel](https://github.com/Kbpatel3).
