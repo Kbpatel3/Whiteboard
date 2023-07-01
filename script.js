@@ -6,4 +6,5 @@ colorButtons = document.querySelectorAll(".colors .option");
 colorPicker = document.querySelector("#color-picker");
 clearBoard = document.querySelector("#clear-board");
 saveBoard = document.querySelector("#save-board");
+
 context = board.getContext("2d");
